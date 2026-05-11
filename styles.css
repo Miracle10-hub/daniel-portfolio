@@ -1,0 +1,209 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #111;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  color: #00bfff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bfff;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  text-align: center;
+  padding: 90px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  color: #00bfff;
+}
+
+.sub-text {
+  color: #aaa;
+  font-size: 16px;
+}
+
+/* =========================
+   INTRO SECTIONS
+========================= */
+.intro {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #00bfff;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #00bfff;
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0099cc;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #00bfff;
+  color: #00bfff;
+}
+
+.btn.secondary:hover {
+  background: #00bfff;
+  color: #000;
+}
+
+/* =========================
+   PROJECT CARDS
+========================= */
+.project-card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #00bfff;
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.15);
+}
+
+.project-card h3 {
+  color: #00bfff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   GITHUB BUTTON
+========================= */
+.github-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #00bfff;
+  color: #00bfff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.github-btn:hover {
+  background: #00bfff;
+  color: #000;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #777;
+  margin-top: 50px;
+  border-top: 1px solid #222;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .project-card {
+    margin: 15px;
+  }
+}
